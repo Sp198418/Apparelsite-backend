@@ -8,7 +8,8 @@ function addProduct(e){
     type: document.getElementById('type').value,
     category: document.getElementById('category').value,
     price: document.getElementById('price').value,
-    count: document.getElementById('count').value
+    count: document.getElementById('count').value,
+    size: document.getElementById('size').value
   }
   fetch('http://localhost:5000/products', {
     method: 'POST',
